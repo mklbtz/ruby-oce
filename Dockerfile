@@ -6,6 +6,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN set -ex && \
+    git clone git://github.com/tpaviot/oce.git && \
     mkdir oce/build && \
     cd oce/build && \
     cmake .. && \
