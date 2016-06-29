@@ -10,7 +10,7 @@ RUN set -ex && \
     mkdir oce/build && \
     cd oce/build && \
     cmake .. && \
-    make && \
+    make -j2 && \
     make install/strip && \
     cd ../.. && rm -rf oce
 
